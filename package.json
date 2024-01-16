@@ -3,13 +3,33 @@
   "module": "index.ts",
   "type": "module",
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/express": "^4.17.21",
+    "xo": "^0.56.0"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.4",
+    "nanoid": "^5.0.4",
     "socket.io": "^4.7.4",
     "typia": "^5.3.10"
+  },
+  "xo": {
+    "space": 4,
+    "rules": {
+      "capitalized-comments": "off",
+      "yoda": "off",
+      "no-constant-binary-expression": 2,
+      "object-curly-spacing": "off",
+      "@typescript-eslint/object-curly-spacing": "off",
+      "import/extensions": 0
+    },
+    "ignores": [
+      "dist"
+    ]
   }
 }
